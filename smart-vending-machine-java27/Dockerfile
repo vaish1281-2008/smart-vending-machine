@@ -21,4 +21,4 @@ EXPOSE 10000
 
 ENV PORT=10000
 
-CMD ["sh", "-c", "java -jar app.jar --server.port=${PORT:10000} --server.address=0.0.0.0"]
+CMD ["sh", "-c", "java -jar app.jar --server.port=${PORT:-10000} --server.address=0.0.0.0"]
